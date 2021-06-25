@@ -19,6 +19,7 @@ function Auth ({ isAuthenticated }) {
             <Route path='/signup' component={Signup} />
             <Route path='/forgot' component={Forgot} />
             <Route path='/reset' component={Reset} />
+
         </div>
     )
 }

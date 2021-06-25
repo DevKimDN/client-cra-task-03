@@ -80,7 +80,7 @@ export default (state = initialState, action) => {
 
                 newState = {
                     ...state,
-                    tasks: [...state.tasks, task],
+                    tasks: [task,...state.tasks],
                     isLoading: false,
                     error: null
                 }

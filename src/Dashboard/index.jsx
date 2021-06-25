@@ -15,8 +15,8 @@ function Dashboard ({ isAuthenticated }) {
                 !isAuthenticated && <Redirect to='/login' />
             )} />
             <Route exact path='/app' component={Home} />
-            <Route path='/app/profile' component={Profile} />
-            <Route path='/app/settings' component={Settings} />
+            {/* <Route path='/app/profile' component={Profile} /> */}
+            {/* <Route path='/app/settings' component={Settings} /> */}
         </div>
     )
 }

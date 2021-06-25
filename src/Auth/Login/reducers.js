@@ -27,7 +27,7 @@ export default (state = initialState, action) => {
                     user
                 } = action.payload
 
-                localStorage.setItem('token', `Bearer ${token}`)
+                localStorage.setItem('token',token)
                 localStorage.setItem('user', JSON.stringify(user))
 
                 newState = {

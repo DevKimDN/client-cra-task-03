@@ -25,7 +25,7 @@ class App extends Component {
 
     componentDidMount () {
         const token = localStorage.getItem('token')
-
+            
         if (token) {
             this.props.dispatch({ type: CHECK_AUTH_STATUS_REQUEST, payload: { token } })
         } else {
@@ -69,7 +69,7 @@ class App extends Component {
             <div className='App'>
                 <Navbar />
                 <div className='mt-content'>
-                    <Route exact path='/' render={() => (
+                    <Route exact path='/' render={() => (   
                         !isAuthenticated ? <Redirect to='/login' /> : <Redirect to='/app' />
                     )} />
                     <Auth />
